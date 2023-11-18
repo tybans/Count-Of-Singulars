@@ -7,12 +7,12 @@ public class CountOfSingulars {
 
         Map<Integer, Integer> countMap = new HashMap<>();
 
-        // Count the occurrences of each sock ID
+        // Counting the occurrences of each sock ID
         for (int sockId : arrNum) {
             countMap.put(sockId, countMap.getOrDefault(sockId, 0) + 1);
         }
 
-        // Count the number of singular socks
+        // Counting the number of singular socks
         int singularCount = 0;
         for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
             int totalCount = entry.getValue();
@@ -22,7 +22,7 @@ public class CountOfSingulars {
             singularCount += singulars;
         }
 
-        // Display the count of singular socks
+        // Displaying the count of singular socks
         System.out.println("Count of singular socks = " + singularCount);
     }
 }
